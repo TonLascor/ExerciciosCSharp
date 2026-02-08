@@ -34,11 +34,8 @@ namespace Program
                 { "11 - Accum", Accum.Executar },
                 { "12 - BuildTower", BuildTower.Executar },
                 { "13 - Replace With Alphabet Position", ReplaceWithAlphabetPosition.Executar },
-                { "14 - Are they the \"same\"?", ReplaceWithAlphabetPosition.Executar }
-
-
-
-
+                { "14 - Are they the \"same\"?", ReplaceWithAlphabetPosition.Executar },
+                { "15 - IP Validation", IPValidation.Executar }
 
 
             }) ;

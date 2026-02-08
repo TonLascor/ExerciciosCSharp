@@ -10,11 +10,9 @@ namespace ExerciciosCSharp.CodeWars
     public class _254ShadesOfGrey
     {
 
-        
-
-        public static void Execute()
-        {
-            char[] hexLetters = new ;
-        }
+        //public static void Execute()
+        //{
+        //    char[] hexLetters = new ;
+        //}
     }
 }
