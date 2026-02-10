@@ -39,7 +39,8 @@ namespace Program
                 { "15 - IP Validation", IPValidation.Executar },
 
                 //StringBuilder
-                { "16 - ReverseWord", ReverseWordsStringBuilder.Executar }
+                { "16 - ReverseWord", ReverseWordsStringBuilder.Executar },
+                { "17 - FruitsList", FruitsList.Executar }
 
 
 
