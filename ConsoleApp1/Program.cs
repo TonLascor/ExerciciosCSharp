@@ -2,6 +2,7 @@
 using ExerciciosCSharp.IfElse;
 using ExerciciosCSharp.Matriz;
 using ExerciciosCSharp.CodeWars;
+using ExerciciosCSharp.StringBuilderSB.Easy;
 
 namespace Program
 {
@@ -35,7 +36,11 @@ namespace Program
                 { "12 - BuildTower", BuildTower.Executar },
                 { "13 - Replace With Alphabet Position", ReplaceWithAlphabetPosition.Executar },
                 { "14 - Are they the \"same\"?", ReplaceWithAlphabetPosition.Executar },
-                { "15 - IP Validation", IPValidation.Executar }
+                { "15 - IP Validation", IPValidation.Executar },
+
+                //StringBuilder
+                { "16 - ReverseWord", ReverseWordsStringBuilder.Executar }
+
 
 
             }) ;
