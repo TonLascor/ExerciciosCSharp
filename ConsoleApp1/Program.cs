@@ -1,52 +1,47 @@
-﻿using ExerciciosCSharp.Exercicios;
+﻿using ExerciciosCSharp.CodeWars;
+using ExerciciosCSharp.Exercicios;
 using ExerciciosCSharp.IfElse;
+using ExerciciosCSharp.LeetCode;
 using ExerciciosCSharp.Matriz;
-using ExerciciosCSharp.CodeWars;
 using ExerciciosCSharp.StringBuilderSB.Easy;
 
-namespace Program
+namespace Program;
+class Program
 {
-
-    class Program
-
+    static void Main(string[] args)
     {
-
-        static void Main(string[] args)
+        var central = new CentralDeExercicios(new Dictionary<string, Action>()
         {
-            var central = new CentralDeExercicios(new Dictionary<string, Action>()
-            {
-                { "1 - Menu com 3 opcoes de soma.", MenuComTresOpcoesDeSoma.Executar },
-                { "2 - Iguais e Diferentes", IguaisEDiferentes.Executar },
-                { "3 - Reajuste Salarial", ReajusteSalarial.Executar },
-                { "4 - Matriz", Matriz.Executar },
-                { "5 - Receber 15 valores", Receber15Valores.Executar },
+            { $"{nameof(MenuComTresOpcoesDeSoma)}", MenuComTresOpcoesDeSoma.Executar },
+            { $"Iguais e Diferentes", IguaisEDiferentes.Executar },
+            { $"Reajuste Salarial", ReajusteSalarial.Executar },
+            { $"Matriz", Matriz.Executar },
+            { $"Receber 15 valores", Receber15Valores.Executar },
+        
+            //If Else
+            { $"Número negativo ou não", NegativoOuNao.Executar },
+            { $"Número par ou impar", ImparPar.Executar },
+        
+            //Matriz
+            { $"Percorrer Matriz", PercorrerMatriz.Executar },
+        
+            //Code Wars
+            { $"ArrayDiff", ArrayDiff.Executar },
+            { $"Disemvowel", Disemvowel.Executar },
+            { $"Accum", Accum.Executar },
+            { $"BuildTower", BuildTower.Executar },
+            { $"Replace With Alphabet Position", ReplaceWithAlphabetPosition.Executar },
+            { $"Are they the \"same\"?", ReplaceWithAlphabetPosition.Executar },
+            { $"IP Validation", IPValidation.Executar },
+        
+            //StringBuilder
+            { $"ReverseWord", ReverseWordsStringBuilder.Executar },
+            { $"{nameof(FruitsList)}", FruitsList.Executar },
 
-                //If Else
+            //LeetCode
+            { $"{nameof(PalindromeNumber)}", PalindromeNumber.Executar }
+        });
 
-                { "6 - Número negativo ou não", NegativoOuNao.Executar  },
-                { "7 - Número par ou impar", ImparPar.Executar  },
-
-                //Matriz
-                { "8 - Percorrer Matriz", PercorrerMatriz.Executar  },
-
-                //Code Wars
-                { "9 - ArrayDiff", ArrayDiff.Executar },
-                { "10 - Disemvowel", Disemvowel.Executar },
-                { "11 - Accum", Accum.Executar },
-                { "12 - BuildTower", BuildTower.Executar },
-                { "13 - Replace With Alphabet Position", ReplaceWithAlphabetPosition.Executar },
-                { "14 - Are they the \"same\"?", ReplaceWithAlphabetPosition.Executar },
-                { "15 - IP Validation", IPValidation.Executar },
-
-                //StringBuilder
-                { "16 - ReverseWord", ReverseWordsStringBuilder.Executar },
-                { "17 - FruitsList", FruitsList.Executar }
-
-
-
-            }) ;
-
-            central.SelecionarEExecutar();
-        }
+        central.SelecionarEExecutar();
     }
 }
