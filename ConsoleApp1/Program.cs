@@ -39,7 +39,8 @@ class Program
             { $"{nameof(FruitsList)}", FruitsList.Executar },
 
             //LeetCode
-            { $"{nameof(PalindromeNumber)}", PalindromeNumber.Executar }
+            { $"{nameof(PalindromeNumber)}", PalindromeNumber.Executar },
+            { $"{nameof(RomanToInteger)}", RomanToInteger.Executar }
         });
 
         central.SelecionarEExecutar();
