@@ -40,7 +40,8 @@ class Program
 
             //LeetCode
             { $"{nameof(PalindromeNumber)}", PalindromeNumber.Executar },
-            { $"{nameof(RomanToInteger)}", RomanToInteger.Executar }
+            { $"{nameof(RomanToInteger)}", RomanToInteger.Executar },
+            { $"{nameof(LetterCombinationsPhoneNumber)}", LetterCombinationsPhoneNumber.Executar }
         });
 
         central.SelecionarEExecutar();

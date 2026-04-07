@@ -71,4 +71,20 @@ public class RomanToInteger
     //    {"M", 1000}
     //};
 
+    public static void test(string input)
+    {
+        Stopwatch sw = new Stopwatch();
+        sw.Start();
+
+        for (int i = 0; i < input.Length; i++)
+        {
+            //var nextNumber = 
+        }
+
+
+            sw.Stop();
+        Console.WriteLine($"Tempo: {sw.ElapsedMilliseconds} ms");
+        Console.WriteLine($"Tempo: {sw.Elapsed.TotalSeconds} segundos");
+    }
+
 }
